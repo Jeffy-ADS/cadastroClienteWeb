@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>WEEK 5 ASSIGNMENT</title>
+  <link rel="stylesheet" href="{% static 'meuApp/css/estilo.css' %}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header id="main-header">Kedi Healthcare</header>
+
+<section class="content">
+  <p class="highlight">Customer Registration Form</p>
+
+  <form id="contactForm" action="/contact/submit" method="POST">
+    <fieldset>
+      <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+      </div>
+
+      <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+      </div>
+
+      <div>
+        <label for="email">Contact Information (Email):</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required>
+      </div>
+
+      <div>
+        <label for="phone">Contact Information (Phone):</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+      </div>
+
+      <div>
+        <label for="location">Address:</label>
+        <textarea id="location" name="location" placeholder="Enter your home address" required></textarea>
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </fieldset>
+  </form>
+</section>
+
+<div class="animate-box"></div>
+
+<footer class="footer">
+  <strong>KedihealthCare_Idimu</strong> &copy; Copyright 2024 | 08155468236
+</footer>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
